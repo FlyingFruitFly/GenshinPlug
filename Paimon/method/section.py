@@ -7,7 +7,6 @@ def add_attributes(paimon):
     attributes = get_character_attributes()
     character_attributes.update(attributes)
     paimon.update_attribute()
-    print(attributes)
 
 
 def del_attributes(paimon):
