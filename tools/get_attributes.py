@@ -11,7 +11,7 @@ character = (0.135, 0.05, 0.865, 1)
 
 def get_character_attributes():
     img = get_attributes_img(character)
-    get_attr(img)
+    return get_attr(img)
 
 
 def get_attr(pil_img):

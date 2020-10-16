@@ -13,9 +13,10 @@ button_bind = [
 ]
 
 menu_settings = [
-    {"label": "伤害分析", "command": section.screenshot},
-    # {"label": "属性获取", "command": section.onCopy},
-    # {"label": "圣遗物录入", "command": section.onCut},
+    {"label": "获取人物属性", "command": section.add_attributes},
+    {"label": "获取任务元素", "command": section.get_element},
+    {"label": "清空全部属性", "command": section.del_attributes},
+    # {"label": "生成分析报告", "command": section.onCopy},
 ]
 
 

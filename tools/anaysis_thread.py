@@ -13,7 +13,6 @@ class ThreadControl(threading.Thread):
         self.kwargs = kwargs
 
     def run(self):
-        print("开始线程：" + self.name)
         self.func(*self.args, **self.kwargs)
 
 
@@ -26,5 +25,4 @@ class AnalysisThread(ThreadControl):
         img = ImageOps.invert(img)
         text_word = pytesseract.image_to_string(img, lang='chi_sim', config='--psm 7')[:-2]\
             .replace(' ', '').replace(',', '')
-        print(text_word)
         save_list[work_id][ana_type] = text_word
