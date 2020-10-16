@@ -2,9 +2,12 @@
 # -*- coding: utf-8 -*-
 
 from Paimon.Paimon import Paimon
+import tkinter
 
 
 if __name__ == '__main__':
+    root = tkinter.Tk()
+    root.withdraw()
     paimon = Paimon()
     paimon.start()
-    print("退出主线程")
+    root.mainloop()

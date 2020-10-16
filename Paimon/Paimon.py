@@ -57,7 +57,7 @@ class Paimon:
 
     def set_menu(self):
         for setting in menu_settings:
-            self.menu.add_command(label=setting['label'], command=func_ext_no_attr(setting['command'], paimon=self))
+            self.menu.add_command(label=setting['label'], command=func_ext_thread(setting['command'], paimon=self))
             self.menu.add_separator()
         self.menu.add_command(label="退出", command=self.root.quit)
 
@@ -67,7 +67,7 @@ class Paimon:
         self.y = 0
         self.x = 0
         self.attribute_box = None
-        self.root = tkinter.Tk()
+        self.root = tkinter.Toplevel()
         self.set_window()
         self.canvas = tkinter.Canvas(self.root)
         self.set_canvas()

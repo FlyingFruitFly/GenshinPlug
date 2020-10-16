@@ -17,7 +17,7 @@ def get_character_attributes():
 def get_attr(pil_img):
     h_start, h_end = sep(pil_img)
     (w, h) = pil_img.size
-    h_len = len(h_start)
+    h_len = len(h_end)
     thread_pool = []
     result_text = [['', '']for i in range(h_len)]
     for i in range(h_len):
