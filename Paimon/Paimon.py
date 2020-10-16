@@ -13,9 +13,9 @@ button_bind = [
 ]
 
 menu_settings = [
-    {"label": "屏幕截图", "command": section.screenshot},
-    {"label": "我的工作", "command": section.onCopy},
-    {"label": "技能学习", "command": section.onCut},
+    {"label": "伤害分析", "command": section.screenshot},
+    # {"label": "属性获取", "command": section.onCopy},
+    # {"label": "圣遗物录入", "command": section.onCut},
 ]
 
 
