@@ -14,9 +14,6 @@ def screenshot(mon):
 
 
 def get_attributes_img(cut_percent):
-    if tools.get_attributes.flag:
-        mss()
-        tools.get_attributes.flag = False
     shape = get_genshin_window()
     mon = {"left": shape[0], "top": shape[1], "width": shape[2] - shape[0], "height": shape[3] - shape[1]}
     mon["left"] = mon["left"] + int(mon["width"] * cut_percent[0])

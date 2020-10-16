@@ -4,6 +4,7 @@ from Paimon.method import section
 from Paimon.method.mouse_event import move, right_click
 from Paimon.settings import height, width
 from tools.func_ext import func_ext
+from mss import mss
 
 button_bind = [
     {"sequence": "<B1-Motion>", "func": move},
@@ -57,6 +58,7 @@ class Paimon:
         self.set_menu()
 
     def start(self):
+        mss()
         self.ensure_top()
         self.root.mainloop()
 
