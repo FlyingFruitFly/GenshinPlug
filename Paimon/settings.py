@@ -20,3 +20,10 @@ attribute_apparent = {
     'CRI': '暴击率',
     'CRD': '暴击伤害',
 }
+
+attribute_weight = {
+    'PercentATK': 3,
+    'AddiATK': 5,
+    'CRI': 2,
+    'CRD': 4,
+}

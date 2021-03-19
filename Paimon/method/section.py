@@ -16,3 +16,7 @@ def del_attributes(paimon):
 
 def get_element(paimon):
     print("学习新的工作技术，只要教过AI一次，就会了，以后的工作都可以交给他")
+
+
+def analysis(paimon):
+    pass

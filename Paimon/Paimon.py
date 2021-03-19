@@ -82,7 +82,7 @@ class Paimon:
 
     def ensure_top(self):
         self.root.lift()
-        # self.root.after(5000, self.ensure_top)
+        self.root.after(5000, self.ensure_top)
 
     def update_attribute(self):
         self.canvas.delete(self.attribute_box)
